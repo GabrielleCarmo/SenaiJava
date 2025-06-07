@@ -13,6 +13,7 @@ public class Main {
         produto.venderProduto(37);
         produto.venderProduto(57);
 
+        System.out.println();
 
         Estudante estudante1 = new Estudante();
 
@@ -27,6 +28,17 @@ public class Main {
 
         System.out.println(estudante1.nome + "Tem média: " + estudante1.calcularMedia());
         System.out.println(estudante2.nome + " Tem média: " + estudante2.calcularMedia());
+
+        System.out.println();
+
+        Titulo titulo = new Titulo();
+        titulo.nome = "Tesouro Selic";
+        titulo.saldo = 2000.00;
+
+
+        titulo.comprarTitulo(24);
+        titulo.simularJuros();
+
 
     }
 }
