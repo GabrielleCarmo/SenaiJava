@@ -1,3 +1,5 @@
+import Model.Aluno;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -38,6 +40,27 @@ public class Main {
 
         titulo.comprarTitulo(24);
         titulo.simularJuros();
+
+
+        System.out.println();
+
+        Aluno aluno01 = new Aluno();
+        aluno01.nome = "Gabrielle";
+        aluno01.altura = 1.67;
+        aluno01.anoMatricula = 2023;
+
+        Aluno aluno02 = new Aluno();
+        aluno02.nome = "Renata";
+        aluno02.altura = 1.55;
+        aluno02.anoMatricula = 2021;
+
+        System.out.println();
+
+        System.out.println(aluno01 + "tem " + aluno01.altura + "m de altura. ");
+        aluno01.estudar();
+
+
+
 
 
     }
